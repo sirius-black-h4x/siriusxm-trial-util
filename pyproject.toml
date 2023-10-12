@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "siriusxm-trial-util"
+dynamic = ["version"]
+authors = [
+    {name = "Alex", email = "AlexAk2@replit.com"},
+    {name = "Sirius Black", email = "sirius.black.h4x@gmail.com"},
+]
+description = "Sirius XM Trial Utility"
+readme = {file = 'README.md', content-type='text/markdown'}
+requires-python = ">=3.8"
+keywords = ["siriusxm", "satellite radio"]
+license = {text = "BSD-2-Clause"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "requests",
+]
+
+[project.urls]
+repository = "https://github.com/sirius-black-h4x/siriusxm-trial-util"
+
+[project.scripts]
+siriusxm-trial-util = "siriusxm_trial_util.siriusxm_trial_util:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "siriusxm_trial_util._version.__version__"}
+
+[tool.setuptools_scm]
+version_file = "siriusxm_trial_util/_version.py"
+
+[tool.setuptools]
+zip-safe = true

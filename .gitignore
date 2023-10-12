@@ -1,0 +1,7 @@
+# Python
+**/__pycache__/
+/siriusxm_trial_util.egg-info/
+/siriusxm_trial_util/_version.py
+
+# VS Code
+**/.vscode
