@@ -310,6 +310,7 @@ def process(device_id: str):
     print(f"update_2: {update_device_sat_refresh_with_priority_cc(device_id, auth_token)}")
     print(f"db_2: {db_update_for_google()}")
 
+
 def main() -> int:
     try:
         radio_id_input = input("Enter Radio ID: ")
@@ -317,6 +318,7 @@ def main() -> int:
     except KeyboardInterrupt:
         pass
     return 0
+
 
 if __name__ == "__main__":
     sys.exit(main())
